@@ -55,7 +55,6 @@ class LTRClient(AddonClient):
 
     @query_params()
     def create_model(self, name: str, body: Any, feature_set_name: str, store_name: Optional[str] = None, params=None):
-        print(body)
         self.transport.perform_request(
             "POST", _make_path("_ltr", store_name, "_featureset", feature_set_name, "_createmodel"), body=body, params=params)
 
