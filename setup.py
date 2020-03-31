@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="elasticsearch_ltr",
-    version="1.0.1",
+    version="1.0.2",
     author="Tigran Saluev",
     author_email="tigran@saluev.com",
     description="Python interface for Elasticsearch LTR extension",
